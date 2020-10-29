@@ -1,1 +1,3 @@
 theme: jekyll-theme-cayman
+title: Documentation of Literature Recommendation Software
+description: The goal of this project is to develop software that recommends a research paper in the accounting domain for a given paragraph as user input. You can look at the journey here about how such a recommendation engine will be developed from scratch.
