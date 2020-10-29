@@ -10,5 +10,5 @@ We started to investigate recommendation system from scrach. We will document al
 - Think about finding a performance measurement for the software. i.e. how to calculate accuracy - <a href="https://github.com/TUM-IDP-WS-20/doc/issues/14">#14</a>
 
 ### Data Preprocessing
-- <a href="/doc/PDF-Text-extraction-tools">PDF Text Extraction Tools</a> - <a href="https://github.com/TUM-IDP-WS-20/doc/issues/15">#15</a>
-- <a href="/doc/data-preprocessing-techniques">Data Processing Techniques</a> - <a href="https://github.com/TUM-IDP-WS-20/doc/issues/16">#16</a>
+- <a href="https://github.com/TUM-IDP-WS-20/nlp-examples/blob/feature/pdf-plain-text-extractor/Plain_Text_Extractor.ipynb">PDF Text Extraction Tools</a> - <a href="https://github.com/TUM-IDP-WS-20/doc/issues/15">#15</a>
+- <a href="https://github.com/TUM-IDP-WS-20/nlp-examples/blob/feature/first-recommendation-example/Milestone_1.ipynb">Data Processing Techniques</a> - <a href="https://github.com/TUM-IDP-WS-20/doc/issues/16">#16</a>
