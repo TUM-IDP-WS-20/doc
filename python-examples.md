@@ -1,4 +1,14 @@
 # Python Examples, bommon libraries, method use-cases
+## Common python
+
+- Catch known exception: `try: - except:`
+
+```python
+try:
+  print(x)
+except:
+  print("An exception occurred")
+```
 
 ## Dataframe
 ### Most used methods
@@ -13,13 +23,25 @@ Index(['Unnamed: 0', 'file_path', 'total_page_count', 'content',
       dtype='object')
 ```
 
-- Catch known exception: `try: - except:`
+- Show DataFrame info: `dt.info()`
 
 ```python
-try:
-  print(x)
-except:
-  print("An exception occurred")
+dt.info()
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 15751 entries, 0 to 15750
+Data columns (total 7 columns):
+ #   Column              Non-Null Count  Dtype 
+---  ------              --------------  ----- 
+ 0   Unnamed: 0          15751 non-null  int64 
+ 1   file_path           15751 non-null  object
+ 2   total_page_count    15751 non-null  int64 
+ 3   content             15751 non-null  object
+ 4   clean_content       15751 non-null  object
+ 5   content_stop_words  15660 non-null  object
+ 6   content_stemmed     15660 non-null  object
+dtypes: int64(2), object(5)
+memory usage: 861.5+ KB
 ```
 
 ### Playing with pandas DataFrame in CSV
