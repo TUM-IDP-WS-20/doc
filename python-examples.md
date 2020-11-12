@@ -44,6 +44,68 @@ dtypes: int64(2), object(5)
 memory usage: 861.5+ KB
 ```
 
+- Check nan values `dt.isna().sum()`
+  
+```python
+df.isna().sum()
+
+Unnamed: 0             0
+file_path              0
+total_page_count       0
+content                0
+clean_content          0
+content_stop_words    91
+content_stemmed       91
+dtype: int64
+```
+
+  Show total number of nan values:
+
+  ```python
+  df.isna().sum().sum()
+  
+  182
+  ```
+- Check a Series contains a given text: `Series.str.contains('text').any()`
+
+```python
+rt['Filename'].str.contains('text').any()
+
+False
+```
+
+- Drop some rows by id
+
+- Reindexing: `reset_index`
+
+```python
+dtr.reset_index(drop=True, inplace=True)
+```
+
+- Get rows and columns by index
+
+```python
+# Rows:
+dt.iloc[0] # first row of data frame (Aleshia Tomkiewicz) - Note a Series data type output.
+dt.iloc[1] # second row of data frame (Evan Zigomalas)
+dt.iloc[-1] # last row of data frame (Mi Richan)
+# Columns:
+dt.iloc[:,0] # first column of data frame (first_name)
+dt.iloc[:,1] # second column of data frame (last_name)
+dt.iloc[:,-1] # last column of data frame (id)
+
+dt.iloc[0:5] # first five rows of dataframe
+dt.iloc[:, 0:2] # first two columns of data frame with all rows
+dt.iloc[[0,3,6,24], [0,5,6]] # 1st, 4th, 7th, 25th row + 1st 6th 7th columns.
+dt.iloc[0:5, 5:8] # first 5 rows and 5th, 6th, 7th columns of data frame (county -> phone1).
+```
+
+- Get column by index
+
+```python
+dtr.reset_index(drop=True, inplace=True)
+```
+
 ### Playing with pandas DataFrame in CSV
 
 #### Read csv file to `DataFrame`
