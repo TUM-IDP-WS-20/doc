@@ -3,6 +3,7 @@
 ## Dataframe
 ### Most used methods
 - Show columns: `dt.columns`
+
 ```python
 dt = pd.read_csv('example_data.csv')
 dt.columns
@@ -10,6 +11,15 @@ dt.columns
 Index(['Unnamed: 0', 'file_path', 'total_page_count', 'content',
        'clean_content', 'content_stop_words', 'content_stemmed'],
       dtype='object')
+```
+
+- Catch known exception: `try: - except:`
+
+```python
+try:
+  print(x)
+except:
+  print("An exception occurred")
 ```
 
 ### Playing with pandas DataFrame in CSV
