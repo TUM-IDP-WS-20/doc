@@ -150,3 +150,59 @@ The default delimiter for CSV is comma ",". However, it could be changed while e
 #### Empty lines
 By default, empty lines are skipped in CSV file format. If you need to take care of empty lines to county empty pages for example, you can count it by marking **skip_blank_lines=False**:
 `df_csv = pd.read_csv('csv_example', skip_blank_lines=False, sep=":")`
+
+
+## Pickling
+The pickle module implements binary protocols for serializing and de-serializing a Python object structure. See here for details: https://docs.python.org/3.8/library/pickle.html
+
+### Pandas pickle
+  - Load
+  
+  ```python
+  import pandas as pd
+  df = pd.read_pickle('data.pkl')  
+  ```
+
+  - Store
+  
+  ```python
+  import pandas as pd
+  df = pd.DataFrame(..)
+  
+  df.to_pickle('data.pkl')
+  ```
+  
+### Pickle
+  - Load
+  
+  ```python
+  import pandas as pd
+  import pickle
+  
+  f = open('data.pkl', 'rb')
+  df = pickle.load(f)
+  f.close()
+  ```
+
+  - Store
+  
+  ```python
+  import pandas as pd
+  import pickle
+  
+  df = pd.DataFrame(..)
+  
+  f = open('data.pkl', 'wb')
+  pickle.dump(df, f)
+  f.close()
+  ```
+  
+  ### Throubleshooting
+  #### `unsupported pickle protocol: 5`
+  This problem happens when the machine that you try to read a pickle file is using a different Python version than where the pickle file was created with. For example, the pickle file is created in Python3.8 but you are trying to load it in Python3.6. If you are facing incompatible version problem:
+    
+  - Store pickle file again with giving specific version (..,protocol=5)
+  - You can use <a href="https://pypi.org/project/pickle5/">pickle5</a>
+  - Upgrade Python version in your machine or in Google Collab
+
+  
