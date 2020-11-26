@@ -69,7 +69,7 @@ However, when we remove this parameter, it throws another similar error for `pyL
 
 2. ### `The exit codes of the workers are {EXIT(1), EXIT(1)}` error when LatentDirichletAllocation.fit_transform called
 
-- Code shown in 1 the only difference is setting `n_jobs = None`
+- Code shown in <a href="#the-exit-codes-of-the-workers-are-exit1-error-when-latentdirichletallocationfit_transform-called">the first section</a> the only difference is setting `n_jobs = None`
 - Error:
 
 ```python
