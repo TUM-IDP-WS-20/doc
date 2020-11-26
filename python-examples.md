@@ -1,4 +1,4 @@
-# Python Examples, bommon libraries, method use-cases
+# Python Examples, common libraries, method use-cases
 ## Common python
 
 - Catch known exception: `try: - except:`
