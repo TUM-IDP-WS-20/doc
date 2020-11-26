@@ -11,4 +11,12 @@ We started to investigate recommendation system from scrach. We will document al
 
 ### Data Preprocessing
 - <a href="https://github.com/TUM-IDP-WS-20/nlp-examples/blob/feature/pdf-plain-text-extractor/Plain_Text_Extractor.ipynb">PDF Text Extraction Tools</a> - <a href="https://github.com/TUM-IDP-WS-20/doc/issues/15">#15</a>
-- <a href="https://github.com/TUM-IDP-WS-20/nlp-examples/blob/feature/first-recommendation-example/Milestone_1.ipynb">Data Processing Techniques</a> - <a href="https://github.com/TUM-IDP-WS-20/doc/issues/16">#16</a>
+- <a href="https://github.com/TUM-IDP-WS-20/nlp-examples/blob/master/Dataset_Analyser.ipynb">Dataset Analyser</a>
+- <a href="https://github.com/TUM-IDP-WS-20/nlp-examples/blob/feature/first-recommendation-example/Milestone_1.ipynb">First LDA model</a> - <a href="https://github.com/TUM-IDP-WS-20/doc/issues/16">#16</a>
+- <a href="https://github.com/TUM-IDP-WS-20/nlp-examples/blob/master/Data_Preprocessing.ipynb">Data Preprocessing</a>
+- <a href="https://github.com/TUM-IDP-WS-20/nlp-examples/blob/master/Milestone_1_W_Relevant_Data.ipynb">Milestone_1 enhancement after removed unrelavent papers</a>
+
+### Coding Tips/Throubleshootings/Examples
+- <a href="/doc/python-examples">Python Examples, bommon libraries, method use-cases</a>
+- <a href="/doc/google-colab">Google Colab Problems and Solutions</a>
+
