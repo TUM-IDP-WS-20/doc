@@ -58,8 +58,9 @@ The exit codes of the workers are {EXIT(1)}
 
 - Solution:
 As mentioned <a href="https://stackoverflow.com/questions/54139403/how-do-i-fix-debug-this-multi-process-terminated-worker-error-thrown-in-scikit-l">here</a>, it might caused by 
-- Sufficient memory(RAM)
-- Incompatible library versions.
+  - Sufficient memory(RAM)
+  - Incompatible library versions.
+  
 We've checked memory consumption and try to increase memory of GColab as mentioned <a href="https://github.com/googlecolab/colabtools/issues/253#issuecomment-551056637">here</a>. However, the problem is not related with the memory usage. If the memory is not enought, Google Colab pops up a notification to inducate that there is not enough memory to continue then it restart the environment.
 
 We don't know the root cause, but simply removing `n_jobs = -1` parameters or set it to default `n_jobs = None`, solve this problem.
