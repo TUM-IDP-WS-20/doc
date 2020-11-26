@@ -74,7 +74,11 @@ rt['Filename'].str.contains('text').any()
 False
 ```
 
-- Drop some rows by id
+- Drop some rows by index
+
+```python
+dx.drop([0,2])
+```
 
 - Reindexing: `reset_index`
 
@@ -86,24 +90,18 @@ dtr.reset_index(drop=True, inplace=True)
 
 ```python
 # Rows:
-dt.iloc[0] # first row of data frame (Aleshia Tomkiewicz) - Note a Series data type output.
-dt.iloc[1] # second row of data frame (Evan Zigomalas)
-dt.iloc[-1] # last row of data frame (Mi Richan)
+dt.iloc[0] # first row of data frame
+dt.iloc[1] # second row of data frame
+dt.iloc[-1] # last row of data frame
 # Columns:
-dt.iloc[:,0] # first column of data frame (first_name)
-dt.iloc[:,1] # second column of data frame (last_name)
-dt.iloc[:,-1] # last column of data frame (id)
+dt.iloc[:,0] # first column of data frame
+dt.iloc[:,1] # second column of data frame
+dt.iloc[:,-1] # last column of data frame
 
 dt.iloc[0:5] # first five rows of dataframe
 dt.iloc[:, 0:2] # first two columns of data frame with all rows
 dt.iloc[[0,3,6,24], [0,5,6]] # 1st, 4th, 7th, 25th row + 1st 6th 7th columns.
-dt.iloc[0:5, 5:8] # first 5 rows and 5th, 6th, 7th columns of data frame (county -> phone1).
-```
-
-- Get column by index
-
-```python
-dtr.reset_index(drop=True, inplace=True)
+dt.iloc[0:5, 5:8] # first 5 rows and 5th, 6th, 7th columns of data frame
 ```
 
 ### Playing with pandas DataFrame in CSV
@@ -198,7 +196,9 @@ The pickle module implements binary protocols for serializing and de-serializing
   ```
   
   ### Throubleshooting
+  
   #### `unsupported pickle protocol: 5`
+  
   This problem happens when the machine that you try to read a pickle file is using a different Python version than where the pickle file was created with. For example, the pickle file is created in Python3.8 but you are trying to load it in Python3.6. If you are facing incompatible version problem:
     
   - Store pickle file again with giving specific version (..,protocol=5)
