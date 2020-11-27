@@ -195,14 +195,14 @@ The pickle module implements binary protocols for serializing and de-serializing
   f.close()
   ```
   
-  ### Throubleshooting
+### Throubleshooting
   
-  #### `unsupported pickle protocol: 5`
+#### `unsupported pickle protocol: 5`
   
-  This problem happens when the machine that you try to read a pickle file is using a different Python version than where the pickle file was created with. For example, the pickle file is created in Python3.8 but you are trying to load it in Python3.6. If you are facing incompatible version problem:
+This problem happens when the machine that you try to read a pickle file is using a different Python version than where the pickle file was created with. For example, the pickle file is created in Python3.8 but you are trying to load it in Python3.6. If you are facing incompatible version problem:
     
-  - Store pickle file again with giving specific version (..,protocol=5)
-  - You can use <a href="https://pypi.org/project/pickle5/">pickle5</a>
-  - Upgrade Python version in your machine or in Google Collab
+ - Store pickle file again with giving specific version (..,protocol=5)
+ - You can use <a href="https://pypi.org/project/pickle5/">pickle5</a>
+ - Upgrade Python version in your machine or in Google Collab
 
   
