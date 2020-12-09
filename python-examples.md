@@ -104,6 +104,24 @@ dt.iloc[[0,3,6,24], [0,5,6]] # 1st, 4th, 7th, 25th row + 1st 6th 7th columns.
 dt.iloc[0:5, 5:8] # first 5 rows and 5th, 6th, 7th columns of data frame
 ```
 
+## Series
+- <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sort_index.html#pandas.DataFrame.sort_index">Sort by index</a>
+```python
+dt = pd.DataFrame(..)
+series = dt['title'].value_counts()
+
+series.sort_index(ascending=True, inplace=False) # default values.
+```
+
+- <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sort_values.html#pandas.DataFrame.sort_values">Sort by value</a>
+```python
+dt = pd.DataFrame(..)
+series = dt['title'].value_counts()
+
+series.sort_values(ascending=True, inplace=False) # default values.
+```
+
+
 ### Playing with pandas DataFrame in CSV
 
 #### Read csv file to `DataFrame`
