@@ -79,6 +79,11 @@ False
 ```python
 dx.drop([0,2])
 ```
+- Drop some columns
+
+```python
+dx.drop(columns=['B', 'C'])
+```
 
 - Reindexing: `reset_index`
 
