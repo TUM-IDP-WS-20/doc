@@ -126,6 +126,24 @@ series = dt['title'].value_counts()
 series.sort_values(ascending=True, inplace=False) # default values.
 ```
 
+## Numpy
+- Get indexes of the maximum N values instead of just getting the maximum value with (np.argmax())
+  Use `argpartition`
+```python
+# Imported from: https://stackoverflow.com/a/23734295/3963197
+>>> a = np.array([9, 4, 4, 3, 3, 9, 0, 4, 6, 0])
+>>> a
+array([9, 4, 4, 3, 3, 9, 0, 4, 6, 0])
+>>> ind = np.argpartition(a, -4)[-4:]
+>>> ind
+array([1, 5, 8, 0])
+>>> a[ind]
+array([4, 9, 6, 9])
+
+# Sort maximum N values and return their indexes
+>>> ind[np.argsort(a[ind])]
+array([1, 8, 5, 0])
+```
 
 ### Playing with pandas DataFrame in CSV
 
