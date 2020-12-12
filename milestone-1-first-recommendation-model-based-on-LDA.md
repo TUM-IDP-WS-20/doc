@@ -1,6 +1,6 @@
 # Milestone #1: First recommendation model based on LDA
 
-
+<div style="width: %90">
 <link rel="stylesheet" type="text/css"
 href="https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.css">
 
@@ -69,3 +69,4 @@ LDAvis_load_lib("https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.js",
 });
 }
 </script>
+</div>
