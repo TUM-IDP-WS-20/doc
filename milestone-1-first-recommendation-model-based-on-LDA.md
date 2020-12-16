@@ -1,6 +1,6 @@
 # Milestone #1: First recommendation model based on LDA
 
-<div style="width: %90">
+<div style="width: 100%">
 <link rel="stylesheet" type="text/css"
 href="https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.css">
 <div id="ldavis_el4015576112362408855419216"></div>
@@ -80,4 +80,94 @@ LDAvis_load_lib("https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.js",
 });
 }
 </script>
+</div>
+<div style="width: 100%">
+    15751 datapoints
+Cleaned -> Stopwords Removed -> Lemmatized -> Stemmed
+
+	# Content 3
+	Top-1 Score:0.21389118151228492
+	Top-5 Score:0.39857786807186846
+	Top-10 Score:0.4849850803123611
+	Top-20 Score:0.5730429813980065
+	Top-50 Score:0.6908132816964002
+	Top-10 Score:0.4849850803123611
+
+
+	# Content 10
+	Top-1 Score:0.21389118151228492
+	Top-5 Score:0.39857786807186846
+	Top-10 Score:0.4849850803123611
+	Top-20 Score:0.5730429813980065
+	Top-50 Score:0.6908132816964002
+
+Cleaned -> Stopwords Removed -> Lemmatized
+	# Content 3
+	Top-1 Score:0.37934099422258905
+	Top-5 Score:0.5840264110215224
+	Top-10 Score:0.6613548346136753
+	Top-20 Score:0.7324614310202526
+	Top-50 Score:0.812075423782617
+	Top-100 Score:0.8622309694622564
+
+	# Content 10
+	Top-1 Score:0.20881213891181513
+	Top-5 Score:0.3741349755571075
+	Top-10 Score:0.4554631451971303
+	Top-20 Score:0.5440289505428226
+	Top-50 Score:0.6660529490191099
+	Top-100 Score:0.7517617929020379
+
+Cleaned -> Stopwords Removed
+	# Content 3
+	Top-1 Score:0.3769284489873659
+	Top-5 Score:0.5873912767443337
+	Top-10 Score:0.6664338772141452
+	Top-20 Score:0.7403974350834868
+	Top-50 Score:0.8261697669989208
+	Top-100 Score:0.8793092502063361
+
+	# Content 10
+	Top-1 Score:0.1965589486381817
+	Top-5 Score:0.3543267094152752
+	Top-10 Score:0.43959113707066216
+	Top-20 Score:0.5268236937337312
+	Top-50 Score:0.6464986350073011
+	Top-100 Score:0.7384293060758047
+
+Cleaned 
+	# Content 3
+	Top-1 Score:0.31820201891943367
+	Top-5 Score:0.548346136753222
+	Top-10 Score:0.6380547266840201
+	Top-20 Score:0.719382896324043
+	Top-50 Score:0.8042029077518887
+
+	# Content 10
+	Top-1 Score:0.1471652593486128
+	Top-5 Score:0.3143927369690813
+	Top-10 Score:0.400292044949527
+	Top-20 Score:0.49120690749793666
+	Top-50 Score:0.6157704272744587
+	Top-100 Score:0.7040187924576218	
+
+Cleaned -> just english stopwords are removed but not accounting domain specific
+	# Content 3
+	Top-1 Score:0.33616913211859567
+	Top-5 Score:0.5626944320995493
+	Top-10 Score:0.6513237254777474
+	Top-20 Score:0.7264300679321948
+	Top-50 Score:0.810551711002476
+	Top-100 Score:0.8622944574947622
+
+	# Content 10
+	Top-1 Score:0.13802298266776714
+	Top-5 Score:0.27807758237572217
+	Top-10 Score:0.3629610818360739
+	Top-20 Score:0.46047869976509426
+	Top-50 Score:0.5882801091994159
+	Top-100 Score:0.6806551964954606
+	time: 5.95 ms
+
+    
 </div>
