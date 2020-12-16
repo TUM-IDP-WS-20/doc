@@ -54,6 +54,17 @@ console.warn("failed to load library " + url);
 document.getElementsByTagName("head")[0].appendChild(s);
 }
 
+function addNewStyle(newStyle) {
+    var styleElement = document.getElementById('styles_js');
+    if (!styleElement) {
+        styleElement = document.createElement('style');
+        styleElement.type = 'text/css';
+        styleElement.id = 'styles_js';
+        document.getElementsByTagName('head')[0].appendChild(styleElement);
+    }
+    styleElement.appendChild(document.createTextNode(newStyle));
+}
+
 if (typeof (LDAvis) !== "undefined") {
 // already loaded: just create the visualization
 !function (LDAvis) {
@@ -73,7 +84,8 @@ LDAvis_load_lib("https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.js",
 LDAvis_load_lib("https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js", function () {
 LDAvis_load_lib("https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.js", function () {
   new LDAvis("#" + "ldavis_el4015576112362408855419216", ldavis_el4015576112362408855419216_data);
-  document.getElementById("ldavis_el4015576112362408855419216-top").style.width = "100%!important";
+  addNewStyle('#ldavis_el4015576112362408855419216-top {width:100% !important;}');
+  addNewStyle('#ldavis_el4015576112362408855419216-top svg{width:100% !important;}');
 })
 });
 }
