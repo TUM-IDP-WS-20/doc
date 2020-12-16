@@ -76,5 +76,7 @@ LDAvis_load_lib("https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.js",
 })
 });
 }
+
+document.getElementById("ldavis_el4015576112362408855419216-top").style.width = "100%";
 </script>
 </div>
