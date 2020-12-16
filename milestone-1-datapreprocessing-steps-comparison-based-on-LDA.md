@@ -1,4 +1,4 @@
-# Milestone #1: First recommendation model based on LDA
+# Data preprocessing steps comparison based on LDA Recommendation
 
 <div style="width: 100%">
 <link rel="stylesheet" type="text/css"
