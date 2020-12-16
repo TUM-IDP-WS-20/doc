@@ -3,6 +3,14 @@
 <div style="width: %90">
 <link rel="stylesheet" type="text/css"
 href="https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.css">
+  <style type="text/css">
+    #ldavis_el4015576112362408855419216-top {
+      width: 100%;
+    }
+    #ldavis_el4015576112362408855419216-top svg {
+      width: 100%;
+    }
+  </style>
 
 
 <div id="ldavis_el4015576112362408855419216"></div>
