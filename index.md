@@ -15,6 +15,12 @@ We started to investigate recommendation system from scrach. We will document al
 - <a href="https://github.com/TUM-IDP-WS-20/nlp-examples/blob/feature/first-recommendation-example/Milestone_1.ipynb">First LDA model</a> - <a href="https://github.com/TUM-IDP-WS-20/doc/issues/16">#16</a>
 - <a href="https://github.com/TUM-IDP-WS-20/nlp-examples/blob/master/Data_Preprocessing.ipynb">Data Preprocessing</a>
 - <a href="https://github.com/TUM-IDP-WS-20/nlp-examples/blob/master/Milestone_1_W_Relevant_Data.ipynb">Milestone_1 enhancement after removed unrelavent papers</a>
+- <a href="/doc/milestone-1-datapreprocessing-steps-comparison-based-on-LDA">Data preprocessing steps comparison based on LDA Recommendation</a>
+
+### Appropriate Topic Modeling Technique
+
+### Recommendation and Similarity Measurement Techniques
+
 
 ### Coding Tips/Throubleshootings/Examples
 - <a href="/doc/python-examples">Python Examples, bommon libraries, method use-cases</a>
