@@ -3,16 +3,6 @@
 <div style="width: %90">
 <link rel="stylesheet" type="text/css"
 href="https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.css">
-<style>
-  #ldavis_el4015576112362408855419216-top {
-    width: 100%;
-  }
-  #ldavis_el4015576112362408855419216-top svg {
-    width: 100%;
-  }
-</style>
-
-
 <div id="ldavis_el4015576112362408855419216"></div>
 <script type="text/javascript">
 
@@ -84,8 +74,8 @@ LDAvis_load_lib("https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.js",
 LDAvis_load_lib("https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js", function () {
 LDAvis_load_lib("https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.js", function () {
   new LDAvis("#" + "ldavis_el4015576112362408855419216", ldavis_el4015576112362408855419216_data);
-  addNewStyle('#ldavis_el4015576112362408855419216-top {width:100% !important;}');
-  addNewStyle('#ldavis_el4015576112362408855419216-top svg{width:100% !important;}');
+  addNewStyle('#ldavis_el4015576112362408855419216-top {width:100%!important;}');
+  addNewStyle('#ldavis_el4015576112362408855419216-top.svg {width:100%!important;}');
 })
 });
 }
