@@ -73,10 +73,9 @@ LDAvis_load_lib("https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.js",
 LDAvis_load_lib("https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js", function () {
 LDAvis_load_lib("https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.js", function () {
   new LDAvis("#" + "ldavis_el4015576112362408855419216", ldavis_el4015576112362408855419216_data);
+  document.getElementById("ldavis_el4015576112362408855419216-top").style.width = "100%!important";
 })
 });
 }
-
-document.getElementById("ldavis_el4015576112362408855419216-top").style.width = "100%!important";
 </script>
 </div>
