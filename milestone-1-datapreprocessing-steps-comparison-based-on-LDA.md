@@ -82,12 +82,15 @@ LDAvis_load_lib("https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.js",
 </script>
 </div>
 <div style="width: 100%">
+    
 We applied different combination of data preprocessing steps and calculate the total accuracy for each model. Applied preprocessing steps:
+
 1. Cleaned -> Stopwords Removed -> Lemmatized -> Stemmed
 2. Cleaned -> Stopwords Removed -> Lemmatized
 3. Cleaned -> Stopwords Removed
 4. Cleaned 
 5. Cleaned -> just english stopwords are removed but not accounting domain specific
+
 
 - To elaborate how to read the models above: For example in the first model, text is cleaned from numbers, references, links, etc. THEN, stopwords are removed, THEN we applied lemmatization. In the final step we applied stemmization.
 
@@ -96,14 +99,14 @@ We applied different combination of data preprocessing steps and calculate the t
 - How do we calculate the accuracy?
   We run the given 5 models above for the dataset that contains just first 3 pages of the papers. Then, for each model, we gave the first page of each paper as an input. After running the models, we check the recommendation result for each paper whether it contains the given input paper. If a model can recommend the given input paper at the first place, we count it as 1 otherwise 0 for Top-1 score. If the recommended paper is not at the first place but it is in top-5 recommended paper, we count this as 1 for Top-5 score, and so on.
   
-  We also applied the same process for the dataset that contains first 10 pages of the papers and document the result.
+We also applied the same process for the dataset that contains first 10 pages of the papers and document the result.
   
-Accuracy Result for the first 3-Paged Content:
+Accuracy Result for the first 3-Paged Content: <br />
 <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR0rPzUe7zfBQuYbePWyJKLhTMvT-H1YflTGvATG4a8PiNISrN8ax_ULzY9QJRG0dyJcAR9GtEXXKu8/pubchart?oid=119057445&amp;format=interactive"></iframe>
 
-Accuracy Result for the first 10-Paged Content:
+Accuracy Result for the first 10-Paged Content: <br />
 <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR0rPzUe7zfBQuYbePWyJKLhTMvT-H1YflTGvATG4a8PiNISrN8ax_ULzY9QJRG0dyJcAR9GtEXXKu8/pubchart?oid=1954437757&amp;format=interactive"></iframe>
 
-Check them all in the excel: https://docs.google.com/spreadsheets/d/1scM6RqGp_qVxDsGLxMZr-M-3TdYnD19_2Ij4uN0f7XQ/edit#gid=0
+Check them all in the excel: <a href="https://docs.google.com/spreadsheets/d/1scM6RqGp_qVxDsGLxMZr-M-3TdYnD19_2Ij4uN0f7XQ/edit#gid=0">https://docs.google.com/spreadsheets/d/1scM6RqGp_qVxDsGLxMZr-M-3TdYnD19_2Ij4uN0f7XQ/edit#gid=0</a>
     
 </div>
