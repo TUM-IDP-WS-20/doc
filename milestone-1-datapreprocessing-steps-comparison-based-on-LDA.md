@@ -96,7 +96,7 @@ We applied different combination of data preprocessing steps and calculate the t
 - In the model of first 4 steps, both standard English stopwords and accounting specific stopwords are removed. In the last(5th) model, just English stop words are removed but accounting specific stopwords are NOT removed.
 
 - How do we calculate the accuracy?
-  We run the given 5 models above for the dataset that contains just first 3 pages of the papers. Then, for each model, we gave the first page of each paper as an input. After running the models, we check the recommendation result for each paper whether it contains the given input paper. If a model can recommend the given input paper at the first place, we count it as 1 otherwise 0 for Top-1 score. If the recommended paper is not at the first place but it is in top-5 recommended paper, we count this as 1 for Top-5 score, and so on.
+We run the given 5 models above for the dataset that contains just first 3 pages of the papers. Then, for each model, we gave the first page of each paper as an input. After running the models, we check the recommendation result for each paper whether it contains the given input paper. If a model can recommend the given input paper at the first place, we count it as 1 otherwise 0 for Top-1 score. If the recommended paper is not at the first place but it is in top-5 recommended paper, we count this as 1 for Top-5 score, and so on.
   
 We also applied the same process for the dataset that contains first 10 pages of the papers and document the result.
   
@@ -107,3 +107,7 @@ Accuracy Result for the first 10-Paged Content: <br />
 <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR0rPzUe7zfBQuYbePWyJKLhTMvT-H1YflTGvATG4a8PiNISrN8ax_ULzY9QJRG0dyJcAR9GtEXXKu8/pubchart?oid=1954437757&amp;format=interactive"></iframe>
 
 Check them all in the excel: <a href="https://docs.google.com/spreadsheets/d/1scM6RqGp_qVxDsGLxMZr-M-3TdYnD19_2Ij4uN0f7XQ/edit#gid=0">https://docs.google.com/spreadsheets/d/1scM6RqGp_qVxDsGLxMZr-M-3TdYnD19_2Ij4uN0f7XQ/edit#gid=0</a>
+
+Conclusion:
+- It seems that the second model(Cleaned -> Stopwords Removed -> Lemmatized) give the best result for both 3-paged content and 10-pages content.
+- The only difference between the model 3 and the model 5 is that accounting stopwords are removed in the model 3.  
