@@ -81,7 +81,6 @@ LDAvis_load_lib("https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.js",
 }
 </script>
 </div>
-<div style="width: 100%">
     
 We applied different combination of data preprocessing steps and calculate the total accuracy for each model. Applied preprocessing steps:
 
@@ -108,5 +107,3 @@ Accuracy Result for the first 10-Paged Content: <br />
 <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR0rPzUe7zfBQuYbePWyJKLhTMvT-H1YflTGvATG4a8PiNISrN8ax_ULzY9QJRG0dyJcAR9GtEXXKu8/pubchart?oid=1954437757&amp;format=interactive"></iframe>
 
 Check them all in the excel: <a href="https://docs.google.com/spreadsheets/d/1scM6RqGp_qVxDsGLxMZr-M-3TdYnD19_2Ij4uN0f7XQ/edit#gid=0">https://docs.google.com/spreadsheets/d/1scM6RqGp_qVxDsGLxMZr-M-3TdYnD19_2Ij4uN0f7XQ/edit#gid=0</a>
-    
-</div>
