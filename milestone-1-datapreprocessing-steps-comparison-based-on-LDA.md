@@ -112,7 +112,9 @@ Conclusion:
 - It seems that the second model(Cleaned -> Stopwords Removed -> Lemmatized) give the best result for both 3-paged content and 10-pages content.
 - The only difference between the model 3 and the model 5 is that accounting stopwords are removed in the model 3 but not removed from the model 5. Only the standard English stopwords are removed in the model 5. You can check the stopwords in excel:
   - <a href="https://drive.google.com/file/d/1jwhQ8TrcAoSJ8QWhjJ_prgrvxe6LWK_Z/view?usp=sharing">English Stop Words</a>
-  - <a href="https://drive.google.com/file/d/1XQ9cxY7ZsBKsfavt9PiVBEE5es9_bA7c/view?usp=sharing">Accountic Specific Stop Words</a>
+  - Accounting stopwords:
+    - <a href="https://drive.google.com/file/d/1KC5CIvECRjs0TlaB87rWW36GNLsI064t/view?usp=sharing">University of Notre Dome Accountic Stop Words</a> Check for details: <a href="https://sraf.nd.edu/textual-analysis/resources/#StopWords">https://sraf.nd.edu/textual-analysis/resources/#StopWords</a>. We combine all stopwords given there.
+    - <a href="https://drive.google.com/file/d/1gZfPtIQyQ82u12ScEvEndMMujfrnh8Gd/view?usp=sharing">Accouting Specific Stop Words that we decide based on frequency of words</a
 - Removing the `accounting` specific stopwords increases the accuracy in both datasets that are 3-paged and 10-paged. The accuracy of model 3 is better than model 5 for all the scores as you can see in the charts.
 - If the number of pages that we use in the training dataset is increased, the lemmatized model gives better accuracy compare to the other models. For example, despite the model 2 does not have best result in 3-paged dataset, it gives the best result compare to the other model in 10-pages dataset.
 - However, if we use less number of pages in the training dataset, the accuracy obviously increases for each of the used model. Since we use the first page of each paper as an input text, models can recommend the paper used in input easier if we use less number of pages in the training dataset. But we will do further research later to find the best number of pages to use in training.
