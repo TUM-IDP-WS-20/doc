@@ -23,6 +23,6 @@ We started to investigate recommendation system from scrach. We will document al
 
 
 ### Coding Tips/Throubleshootings/Examples
-- <a href="/doc/python-examples">Python Examples, bommon libraries, method use-cases</a>
+- <a href="/doc/python-examples">Python Examples, common libraries, method use-cases</a>
 - <a href="/doc/google-colab">Google Colab Problems and Solutions</a>
 
